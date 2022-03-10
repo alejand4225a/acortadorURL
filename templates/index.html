@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}ACORTADOR URL{% endblock %}
+
+{% block content %}
+<form action="#", method="post">
+    <label for="url">ingrese el LINK https:// URL:</label>
+
+    <input type="url" name="nm" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="50"
+       required>
+    <br>
+    <input type="aceptar" value="aceptar" class="btn btn-primary">
+</form>
+{% endblock %}
